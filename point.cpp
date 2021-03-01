@@ -1,3 +1,4 @@
+#include <cmath>
 #include "point.hpp"
 
 Point::Point() {
@@ -20,4 +21,11 @@ int Point::getY() {
 }
 void Point::setY(int y) {
     y_ = y;
+}
+
+double Point::distance(Point one, Point two) {
+    return sqrt(((two.getX() - one.getX()) * (two.getX() - one.getX())) + ((two.getY() - one.getY()) * (two.getY() - one.getY())));
+}
+double Point::distance(Point point) {
+    return sqrt(((point.getX() - x_) * (point.getX() - x_)) + ((point.getY() - y_) * (point.getY() - y_)));
 }

@@ -13,6 +13,9 @@ class Point {
         void setX(int x);
         int getY();
         void setY(int y);
+
+        static double distance(Point one, Point two);
+        double distance(Point point);
 };
 
 #endif
