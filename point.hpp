@@ -3,16 +3,16 @@
 
 class Point {
     private:
-        int x_;
-        int y_;
+        double x_;
+        double y_;
     public:
         Point();
-        Point(int x, int y);
+        Point(double x, double y);
 
-        int getX();
-        void setX(int x);
-        int getY();
-        void setY(int y);
+        double getX();
+        void setX(double x);
+        double getY();
+        void setY(double y);
 
         static double distance(Point one, Point two);
         double distance(Point point);

@@ -5,21 +5,21 @@ Point::Point() {
     x_ = 0;
     y_ = 0;
 }
-Point::Point(int x, int y) {
+Point::Point(double x, double y) {
     x_ = x;
     y_ = y;
 }
 
-int Point::getX() {
+double Point::getX() {
     return x_;
 }
-void Point::setX(int x) {
+void Point::setX(double x) {
     x_ = x;
 }
-int Point::getY() {
+double Point::getY() {
     return y_;
 }
-void Point::setY(int y) {
+void Point::setY(double y) {
     y_ = y;
 }
 
