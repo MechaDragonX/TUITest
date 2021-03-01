@@ -16,6 +16,8 @@ class Point {
 
         static double distance(Point one, Point two);
         double distance(Point point);
+        static Point midpoint(Point one, Point two);
+        Point midpoint(Point point);
 };
 
 #endif

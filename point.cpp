@@ -29,3 +29,6 @@ double Point::distance(Point one, Point two) {
 double Point::distance(Point point) {
     return sqrt(((point.getX() - x_) * (point.getX() - x_)) + ((point.getY() - y_) * (point.getY() - y_)));
 }
+Point Point::midpoint(Point one, Point two) {
+    return Point(((one.getX() + two.getX()) / 2), ((one.getY() + two.getY()) / 2));
+}
